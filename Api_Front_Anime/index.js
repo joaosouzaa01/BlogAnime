@@ -10,6 +10,10 @@ app.use(express.static('public'));
 
 app.set('view engine', 'ejs');
 
+app.get('/home', (req, res)=>{
+    res.render('categoria/home');
+});
+
 app.get('/cadastroCategorias', (req, res)=>{
     res.render('categoria/index');
 });

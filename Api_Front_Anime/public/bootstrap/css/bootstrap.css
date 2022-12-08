@@ -4,7 +4,7 @@
  * Copyright 2011-2018 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
-:root {
+ :root {
   --blue: #007bff;
   --indigo: #6610f2;
   --purple: #6f42c1;
@@ -35,6 +35,45 @@
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
+.textGradient {
+  background: linear-gradient(90deg, #ff6200, #fa3f3f);
+  font-weight: 600;
+  font-size: 20px;
+  text-transform: uppercase;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.titleHome {
+  font-size: 4.5rem;
+  margin-left: 15px;
+  margin-top: 80px;
+  color: #FFF;
+  
+}
+
+.buttonNormal {
+  border: none;
+  margin: 20px;
+  padding: 22px;
+  width: 210px;
+  font-family: "montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  color: #FFF;
+  background-size: 200%;
+  transition: 0.6s;
+}
+
+.buttonGradient {
+  background-image: linear-gradient(to left, #ff0400, #ff6200, #f8a500);
+}
+
+.buttonNormal:hover{
+  background-position: right;
+}
 *,
 *::before,
 *::after {
@@ -42,7 +81,7 @@
 }
 
 html {
-  font-family: sans-serif;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
@@ -58,6 +97,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
   display: block;
 }
 
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -67,6 +107,8 @@ body {
   color: #212529;
   text-align: left;
   background-color: #fff;
+  background-image: url("https://images8.alphacoders.com/115/1150694.jpg");
+  background-size: cover;
 }
 
 [tabindex="-1"]:focus {
@@ -269,9 +311,7 @@ select {
 button,
 html [type="button"],
 [type="reset"],
-[type="submit"] {
-  -webkit-appearance: button;
-}
+[type="submit"] 
 
 button::-moz-focus-inner,
 [type="button"]::-moz-focus-inner,
@@ -290,9 +330,7 @@ input[type="checkbox"] {
 input[type="date"],
 input[type="time"],
 input[type="datetime-local"],
-input[type="month"] {
-  -webkit-appearance: listbox;
-}
+input[type="month"] 
 
 textarea {
   overflow: auto;
@@ -329,7 +367,6 @@ progress {
 
 [type="search"] {
   outline-offset: -2px;
-  -webkit-appearance: none;
 }
 
 [type="search"]::-webkit-search-cancel-button,
@@ -1816,9 +1853,9 @@ pre code {
   font-size: 1rem;
   line-height: 1.5;
   color: #495057;
-  background-color: #fff;
+  background-color: #3f403f;
   background-clip: padding-box;
-  border: 1px solid #ced4da;
+  border: 1px solid #515251;
   border-radius: 0.25rem;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
@@ -1836,7 +1873,7 @@ pre code {
 
 .form-control:focus {
   color: #495057;
-  background-color: #fff;
+  background-color: #3f403f;
   border-color: #80bdff;
   outline: 0;
   box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
@@ -5335,7 +5372,6 @@ button.close {
   padding: 0;
   background-color: transparent;
   border: 0;
-  -webkit-appearance: none;
 }
 
 .modal-open {
